@@ -1,0 +1,31 @@
+vi:
+  title: "Ứng dụng mẫu Ruby on Rails Tutorial"
+  layout: 
+    translate:
+      eng: "Tiếng Anh"
+      vie: "Tiếng Việt"
+    header:
+      logo: "Ứng dụng mẫu"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
+    footer:
+      about: "Thông tin"
+      contact: "Liên lạc"
+      news: "Tin tức"
+      tutor: "Hướng dẫn Ruby on Rails bởi"
+  static_page:
+    home:
+      welcome: "Ứng dụng mẫu Ruby on rails"
+      service: "Đây là trang chủ của ứng dụng mẫu 
+        Ruby on Rails Tutorial"
+      button_signin: "Đăng kí ngay!"
+    help:
+      welcome: "Hỗ trợ"
+      service: "Xem thêm chi tiết về Ruby on Rails tại"
+      service_continue: "Để lấy ví dụ cho từng trường hợp tại"
+      book: ""
+    contact:
+      welcome: "Liên lạc"
+      content: "Thông tin chi tiết về Ruby on Rails Tutorial tại"
+      content_continue: "đường dẫn"
