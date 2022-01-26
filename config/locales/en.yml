@@ -1,0 +1,41 @@
+en:
+  title: "Ruby on Rails Tutorial Sample App"
+  layouts:
+    header:
+      logo: "Sample App"
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+    footer:
+      about: "About"
+      contact: "Contact"
+      news: "News"
+      tutor: "Ruby on Rails Tutorial"
+      eng: "English"
+      vie: "Vietnamese"
+      author: "Michael Hartl"
+  static_page:
+    home:
+      welcome: "Ruby on rails Sample App"
+      service: "This is the home page for the 
+        Ruby on Rails Tutorial sample application."
+      button_signin: "Sign up now!"
+    help:
+      welcome: "Help"
+      service: "Get help on the Ruby on Rails Tutorial at the"
+      service_continue: "To get help on this sample app, see the"
+      book: "Ruby on Rails Tutorial book."
+      tutorial_help: "Rails Tutorial Help."
+    contact:
+      welcome: "Contact"
+      content: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      content_continue: "contact page"
+    user:
+      welcome: "User"
+      signup: "Sign up"
+    about:
+      title: "About"
+      content: ", part of the "
+      content_continue: "This is the sample app for the tutorial."
+      sample_app: "This is the sample app for the tutorial."
+      learn_enough: "Learn enough"
