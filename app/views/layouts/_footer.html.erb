@@ -1,0 +1,19 @@
+<footer class="footer">
+  <small>
+    <%= link_to t(".tutor"), Settings.url.home_page %>
+    <%= link_to t(".author"), Settings.url.author %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".eng"), locale: :en %></li>
+      <li> <%= link_to t(".vie"), locale: :vi %></li>
+    </ul>
+  </nav>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), about_path %></li>
+      <li><%= link_to t(".contact"), contact_path %></li>
+      <li><%= link_to t(".news"), Settings.url.news %></li>
+    </ul>
+  </nav>
+</footer>

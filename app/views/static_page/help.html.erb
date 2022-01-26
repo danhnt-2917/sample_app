@@ -1,0 +1,10 @@
+<% provide(:title, t(".welcome")) %>
+<body>
+  <h1><%= t(".welcome") %></h1>
+  <p>
+    <%= t(".service") %>
+    <%= link_to t(".tutorial_help"), Settings.url.help %>
+    <%= t(".service_continue") %>
+    <%= link_to t(".book"), Settings.url.book %>.
+  </p>
+</body>
