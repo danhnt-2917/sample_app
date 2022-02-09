@@ -7,3 +7,10 @@ url:
   contact: "https://www.railstutorial.org/contact"
   book: "https://www.railstutorial.org/book"
   help: "https://www.railstutorial.org/help"
+validate:
+  name:
+    max_length: 50
+  email:
+    max_length: 255
+  password:
+    min_length: 6

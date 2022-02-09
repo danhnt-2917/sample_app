@@ -1,11 +1,18 @@
 vi:
   title: "Ứng dụng mẫu Ruby on Rails Tutorial"
+  success: "Chào mừng bạn đến với Ứng dụng mẫu!"
+  user_not_found: "Không tìm thấy người dùng!"
   layouts:
     header:
       logo: "Ứng dụng mẫu"
       home: "Trang chủ"
       help: "Trợ giúp"
       login: "Đăng nhập"
+      user: "Người dùng"
+      profile: "Trang cá nhân"
+      setting: "Cài đặt"
+      logout: "Đăng xuất"
+      account: "Tài khoản"
     footer:
       about: "Thông tin"
       contact: "Liên lạc"
@@ -40,3 +47,30 @@ vi:
         web với Ruby on Rails."
       sample_app: "Đây là một ứng dụng mẫu."
       learn_enough: "Học đầy đủ"
+  users:
+    new:
+      welcome: "Trang đăng kí"
+      signin: "Đăng kí"
+      button_create: "Đăng kí tài khoản"
+  error:
+    message: "Form chứa %{count}."
+    errors: "lỗi"
+  activerecord:
+    models:
+      user: "Người dùng"
+    attributes:
+      user:
+        name: "Tên người dùng"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+  sessions:
+    new:
+      login: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      button_login: "Đăng nhập"
+      new_user: "Chưa có tài khoản?"
+      signup_now: "Đăng kí ngay!"
+    create:
+      invalid: "Email/mật khẩu không đúng"
