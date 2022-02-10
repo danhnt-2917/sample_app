@@ -1,7 +1,6 @@
 vi:
   title: "Ứng dụng mẫu Ruby on Rails Tutorial"
   success: "Chào mừng bạn đến với Ứng dụng mẫu!"
-  invalid: "Email/mật khẩu không đúng"
   user_not_found: "Không tìm thấy người dùng!"
   layouts:
     header:
@@ -9,6 +8,11 @@ vi:
       home: "Trang chủ"
       help: "Trợ giúp"
       login: "Đăng nhập"
+      user: "Người dùng"
+      profile: "Trang cá nhân"
+      setting: "Cài đặt"
+      logout: "Đăng xuất"
+      account: "Tài khoản"
     footer:
       about: "Thông tin"
       contact: "Liên lạc"
@@ -60,3 +64,13 @@ vi:
         email: "Email"
         password: "Mật khẩu"
         password_confirmation: "Xác nhận mật khẩu"
+  sessions:
+    new:
+      login: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      button_login: "Đăng nhập"
+      new_user: "Chưa có tài khoản?"
+      signup_now: "Đăng kí ngay!"
+    create:
+      invalid: "Email/mật khẩu không đúng"
