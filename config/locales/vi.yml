@@ -2,6 +2,11 @@ vi:
   title: "Ứng dụng mẫu Ruby on Rails Tutorial"
   success: "Chào mừng bạn đến với Ứng dụng mẫu!"
   user_not_found: "Không tìm thấy người dùng!"
+  update_success: "thông tin cá nhân cập nhật thành công"
+  update_fail: "Không thể cập nhật thông tin"
+  delete_success: "Xóa người dùng thành công!"
+  delete_fail: "Xóa người dùng thất bại!"
+  warning_login: "Vui lòng đăng nhập."
   layouts:
     header:
       logo: "Ứng dụng mẫu"
@@ -52,6 +57,16 @@ vi:
       welcome: "Trang đăng kí"
       signin: "Đăng kí"
       button_create: "Đăng kí tài khoản"
+    edit:
+      button_edit: "Lưu thay đổi"
+      change: "Chỉnh sửa"
+      title: "Chỉnh sửa thông tin người dùng"
+      h1: "Chỉnh sửa thông tin của bạn"
+    user:
+      delete: "Xóa"
+      confirm: "Bạn có muốn xóa không?"
+    index:
+      title: "Danh sách người dùng"
   error:
     message: "Form chứa %{count}."
     errors: "lỗi"

@@ -7,6 +7,7 @@ url:
   contact: "https://www.railstutorial.org/contact"
   book: "https://www.railstutorial.org/book"
   help: "https://www.railstutorial.org/help"
+  gravatar_link: "https://gravatar.com/emails"
 validate:
   name:
     max_length: 50
@@ -14,3 +15,6 @@ validate:
     max_length: 255
   password:
     min_length: 6
+page:
+  size_avatar: 50
+  total_element: 10
