@@ -3,6 +3,11 @@ en:
   success: "Welcome to Sample App!"
   user_not_found: "User not found!"
   success: "Welcome to the Sample App!"
+  update_success: "Profile updated"
+  update_fail: "Profile updated fail!"
+  delete_success: "User deleted!"
+  delete_fail: "Delete Fail!"
+  warning_login: "Please log in."
   layouts:
     header:
       logo: "Sample App"
@@ -52,6 +57,16 @@ en:
       welcome: "Signup Page"
       signin: "Signup"
       button_create: "Create my account"
+    edit:
+      button_edit: "Save changes"
+      change: "Change"
+      title: "Edit user"
+      h1: "Edit your profile"
+    user:
+      delete: "Delete"
+      confirm: "Are you sure?"
+    index:
+      title: "All user"
   error:
     message: "The form contains %{count}."
     errors: "error"
