@@ -72,5 +72,6 @@ vi:
       button_login: "Đăng nhập"
       new_user: "Chưa có tài khoản?"
       signup_now: "Đăng kí ngay!"
+      remember: "Ghi nhớ đăng nhập của tôi"
     create:
       invalid: "Email/mật khẩu không đúng"
