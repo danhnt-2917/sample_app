@@ -9,6 +9,8 @@ vi:
   warning_login: "Vui lòng đăng nhập."
   success_activated: "Tài khoản đã được kích hoạt!"
   fail_activated: "Đường dẫn kích hoạt hiện không có"
+  password_expired_link: "Hết hạn thay đổi mật khẩu."
+  password_reset: "Đặt lại mật khẩu"
   layouts:
     header:
       logo: "Ứng dụng mẫu"
@@ -92,6 +94,7 @@ vi:
       new_user: "Chưa có tài khoản?"
       signup_now: "Đăng kí ngay!"
       remember: "Ghi nhớ đăng nhập của tôi"
+      forgot_password: "Quên mật khẩu?"
     create:
       invalid: "Email/mật khẩu không đúng"
       account_not_activated: "Tài khoản chưa được kích hoạt. \n
@@ -102,3 +105,24 @@ vi:
       activate: "Kích hoạt"
       content: "Chào mừng đến với ứng dụng mẫu! Click vào link để kích hoạt
         tài khoản:"
+    password_reset:
+      h1: "Đặt lại mật khẩu"
+      content: "Để đặt lại mật khẩu, click vào link bên dưới: "
+      reset_password: "Đặt lại mật khẩu"
+      content_continue: "Đường dẫn sẽ hết hiệu lực trong 2 tiếng"
+      content_finally: "Nếu như bạn không yêu cầu thay đổi mật khẩu,
+        hãy bỏ qua email này."
+  password_resets:
+    edit:
+      title: "Đặt lại mật khẩu"
+      button_submit: "Lưu thay đổi"
+      password_confirmation: "Xác nhận mật khẩu"
+    new:
+      title: "Quên mật khẩu"
+      button_submit: "Gửi"
+    create:
+      flash_email_reset: "Vui lòng kiểm tra email để thay đổi mật khẩu"
+      flash_email_notfound: "Không tìm thấy email"
+    update:
+      password_empty: "Không thể trống"
+      password_success: "Mật khẩu đã được thay đổi."
