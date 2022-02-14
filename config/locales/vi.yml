@@ -7,6 +7,8 @@ vi:
   delete_success: "Xóa người dùng thành công!"
   delete_fail: "Xóa người dùng thất bại!"
   warning_login: "Vui lòng đăng nhập."
+  success_activated: "Tài khoản đã được kích hoạt!"
+  fail_activated: "Đường dẫn kích hoạt hiện không có"
   layouts:
     header:
       logo: "Ứng dụng mẫu"
@@ -67,6 +69,8 @@ vi:
       confirm: "Bạn có muốn xóa không?"
     index:
       title: "Danh sách người dùng"
+    create:
+      info_activate_account: "Kiểm tra email để kích hoạt tài khoản."
   error:
     message: "Form chứa %{count}."
     errors: "lỗi"
@@ -90,3 +94,11 @@ vi:
       remember: "Ghi nhớ đăng nhập của tôi"
     create:
       invalid: "Email/mật khẩu không đúng"
+      account_not_activated: "Tài khoản chưa được kích hoạt. \n
+        Vui lòng kiểm tra email."
+  user_mailer:
+    account_activation:
+      title: "Ứng dụng mẫu"
+      activate: "Kích hoạt"
+      content: "Chào mừng đến với ứng dụng mẫu! Click vào link để kích hoạt
+        tài khoản:"
