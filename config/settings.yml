@@ -18,3 +18,5 @@ validate:
 page:
   size_avatar: 50
   total_element: 10
+time:
+  expired_time: 2
