@@ -15,7 +15,8 @@ Rails.application.routes.draw do
     get "password/edit", to: "password_resets#edit"
     resources :users, except: %i(new)
     resources :account_activations, only: :edit
-    resources :password_resets, only: [:new, :create, :edit, :update]
+    resources :password_resets, except: %i(destroy)
+    resources :microposts, only: %i(create destroy)
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
