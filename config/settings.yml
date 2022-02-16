@@ -15,8 +15,16 @@ validate:
     max_length: 255
   password:
     min_length: 6
+  img:
+    byte: 5
+  content:
+    max_length: 140
+range_500: [500, 500]
 page:
   size_avatar: 50
   total_element: 10
 time:
   expired_time: 2
+micropost:
+  image: ["image/jpeg", "image/gif", "image/png"]
+accept_image: "image/jpeg,image/gif,image/png"

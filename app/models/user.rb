@@ -15,6 +15,8 @@ class User < ApplicationRecord
 
   has_secure_password
 
+  has_many :microposts, dependent: :destroy
+
   before_save{email.downcase!}
   before_create :create_activation_digest
 
@@ -65,7 +67,8 @@ class User < ApplicationRecord
   # Sets the password reset attributes.
   def create_reset_digest
     self.reset_token = User.new_token
-    update_columns reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
+    update_columns reset_digest: User.digest(reset_token),
+                    reset_sent_at: Time.zone.now
   end
 
   # Sends password reset email.
@@ -75,5 +78,9 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.time.expired_time.hours.ago
+  end
+
+  def feed
+    microposts
   end
 end

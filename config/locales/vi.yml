@@ -11,6 +11,7 @@ vi:
   fail_activated: "Đường dẫn kích hoạt hiện không có"
   password_expired_link: "Hết hạn thay đổi mật khẩu."
   password_reset: "Đặt lại mật khẩu"
+  flash_invalid_micropost: "Không thể truy cập post này"
   layouts:
     header:
       logo: "Ứng dụng mẫu"
@@ -73,6 +74,9 @@ vi:
       title: "Danh sách người dùng"
     create:
       info_activate_account: "Kiểm tra email để kích hoạt tài khoản."
+    show:
+      count: "%{count} bài đăng"
+      zero_post: "Hiện tại chưa có bài viết nào. \n Hãy viết ngay!"
   error:
     message: "Form chứa %{count}."
     errors: "lỗi"
@@ -126,3 +130,26 @@ vi:
     update:
       password_empty: "Không thể trống"
       password_success: "Mật khẩu đã được thay đổi."
+  shared:
+    user_info:
+      view_profile: "Xem trang cá nhân"
+      count_micropost: "bài viết"
+    micropost_form:
+      placeholder_post: "Viết gì đó..."
+      button_submit: "Đăng bài"
+  microposts:
+    validates:
+      validate_img_format: "Phải đúng kiểu ảnh"
+      validate_img_size: "Ảnh phải nhỏ hơn 5MB"
+    micropost:
+      delete: "Xóa"
+      confirm: "Bạn có muốn xóa không?"
+      post: "Đăng %{time} trước."
+    create:
+      flash_success: "Tạo bài viết thành công!"
+    destroy:
+      flash_delete_success: "Xóa bài viết thành công"
+      flash_delete_fail: "Xóa bài viết thất bại"
+  js:
+    check_imgage:
+      check_img_size: "Tối đa 5MB. Vui lòng chọn file chọn lại."
