@@ -36,8 +36,7 @@ class MicropostsController < ApplicationController
       flash[:success] = t ".flash_success"
       redirect_to root_url
     else
-      @pagy, @feed_items = pagy current_user.feed.recent_posts,
-                                items: Settings.page.total_element
+      @pagy, @feed_items = pagy User.feed(current_user_following).recent_posts
       render "static_page/home"
     end
   end

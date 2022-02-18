@@ -20,4 +20,8 @@ class ApplicationController < ActionController::Base
     flash[:danger] = t("warning_login")
     redirect_to login_url
   end
+
+  def current_user_following
+    current_user.following_ids << current_user.id
+  end
 end

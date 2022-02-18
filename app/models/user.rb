@@ -15,10 +15,21 @@ class User < ApplicationRecord
 
   has_secure_password
 
+  has_many :active_relationships, class_name: Relationship.name,
+                                  foreign_key: :follower_id,
+                                  dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+                                  foreign_key: :followed_id,
+                                  dependent: :destroy
+
   has_many :microposts, dependent: :destroy
+  has_many :followings, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
 
   before_save{email.downcase!}
   before_create :create_activation_digest
+
+  scope :feed, ->id{Micropost.where user_id: id}
 
   class << self
     def digest string
@@ -80,7 +91,19 @@ class User < ApplicationRecord
     reset_sent_at < Settings.time.expired_time.hours.ago
   end
 
-  def feed
-    microposts
+  # def feed
+  #   Micropost.where user_id: (following_ids << id)
+  # end
+
+  def follow other_user
+    followings << other_user
+  end
+
+  def unfollow other_user
+    followings.delete other_user
+  end
+
+  def following? other_user
+    followings.include? other_user
   end
 end

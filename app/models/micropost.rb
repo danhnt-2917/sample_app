@@ -6,7 +6,8 @@ class Micropost < ApplicationRecord
 
   validates :image,
             content_type: {in: Settings.micropost.image,
-                           message: I18n.t("microposts.validates.validate_img")},
+                           message:
+                              I18n.t("microposts.validates.validate_img")},
             size: {less_than: Settings.validate.img.byte.megabytes,
                    message: I18n.t("microposts.validates.validate_img_size")}
 
@@ -16,6 +17,6 @@ class Micropost < ApplicationRecord
   scope :recent_posts, ->{order created_at: :desc}
 
   def display_image
-    image.variant(resize_to_limit: Settings.range_500)
+    image.variant(resize_to_limit: [Settings.range_500])
   end
 end
