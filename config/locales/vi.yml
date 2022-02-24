@@ -37,6 +37,7 @@ vi:
       service: "Đây là trang chủ của ứng dụng mẫu 
         Ruby on Rails Tutorial"
       button_signin: "Đăng kí ngay!"
+      micropost_feed: "Micropost Feed"
     help:
       welcome: "Hỗ trợ"
       service: "Xem thêm chi tiết về Ruby on Rails tại"
@@ -77,6 +78,13 @@ vi:
     show:
       count: "%{count} bài đăng"
       zero_post: "Hiện tại chưa có bài viết nào. \n Hãy viết ngay!"
+    follow:
+      button_follow: "Theo dõi"
+    unfollow:
+      button_unfollow: "Bỏ theo dõi"
+    show_follow:
+      view_profile: "Xem thông tin"
+      micropost: "Microposts: %{count}"
   error:
     message: "Form chứa %{count}."
     errors: "lỗi"
@@ -137,6 +145,9 @@ vi:
     micropost_form:
       placeholder_post: "Viết gì đó..."
       button_submit: "Đăng bài"
+    stats:
+      following: "%{count} following"
+      followers: "%{count} followers"
   microposts:
     validates:
       validate_img_format: "Phải đúng kiểu ảnh"

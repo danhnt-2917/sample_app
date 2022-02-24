@@ -38,6 +38,7 @@ en:
       service: "This is the home page for the 
         Ruby on Rails Tutorial sample application."
       button_signin: "Sign up now!"
+      micropost_feed: "Micropost Feed"
     help:
       welcome: "Help"
       service: "Get help on the Ruby on Rails Tutorial at the"
@@ -77,6 +78,13 @@ en:
     show:
       count: "Micropost %{count}"
       zero_post: "User hasn't posted micropost. \n Post now!"
+    follow:
+      button_follow: "Follow"
+    unfollow:
+      button_unfollow: "Unfollow"
+    show_follow:
+      view_profile: "view my profile"
+      micropost: "Microposts: %{count}"
   error:
     message: "The form contains %{count}."
     errors: "error"
@@ -137,6 +145,9 @@ en:
     micropost_form:
       placeholder_post: "Compose new micropost..."
       button_submit: "Post"
+    stats:
+      following: "%{count} following"
+      followers: "%{count} followers"
   microposts:
     validates:
       validate_img_format: "must be valid image format"
